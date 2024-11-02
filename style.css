@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+/* Global Styles */
+* {
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: "Ana"; /* Имя шрифта для использования в CSS */
+    src: url("AnnabelleCyr.ttf") format("truetype"); /* Путь и формат шрифта */
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/image43.jfif') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+}
+
+.hero-content h1 {
+    
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+    font-family: Ana;
+    margin-top: 400px;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content h2 {
+    font-size: 1.5rem;
+    color: white;
+    font-family: Ana;
+}
+.leaf-image {
+    width: 150px; /* Ширина изображения листка */
+    position: absolute; /* Абсолютное позиционирование для наложения на текст */
+    left: 0; /* Позиция изображения слева */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%); /* Центрируем по вертикали относительно собственного размера */
+    opacity: 0.5; /* Устанавливаем прозрачность, чтобы текст был виден сквозь изображение */
+    z-index: 1; /* Устанавливаем z-index, чтобы изображение было ниже текста */
+}
+
+.leaf-image1 {
+    width: 150px; /* Ширина изображения листка */
+    position: absolute; /* Абсолютное позиционирование для наложения на текст */
+    right: 0; /* Позиция изображения слева */
+    top: 50%; /* Центрируем по вертикали */
+    transform: translateY(-50%) scaleX(-1); /* Центрируем по вертикали и отзеркаливаем по горизонтали */
+    opacity: 0.5; /* Устанавливаем прозрачность, чтобы текст был виден сквозь изображение */
+    z-index: 1; /* Устанавливаем z-index, чтобы изображение было ниже текста */
+}
+/* Section Styles */
+section {
+    padding: 60px 20px;
+    max-width: 800px;
+    margin: auto;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-family: "Emilys Candy", serif;
+}
+
+.event-details p {
+    font-size: 1.3rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-family: "Emilys Candy", serif;
+  
+}
+h5 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 1.0;
+    font-family: Ana;
+}
+
+h6 {
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+    color: black;
+    line-height: 1.0;
+    font-family: Ana;
+}
+
+.about-us p{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #666;
+    line-height: 1.0;
+    font-family: Ana;
+}
+
+/* About Us Section Photos */
+.photos {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.photos img {
+    width: 45%;
+    border-radius: 8px;
+}
+
+/* Event Details Links */
+.event-details a {
+    display: inline-block;
+    margin-top: 20px;
+    color: #333;
+    text-decoration: underline;
+}
+
+/* Gallery */
+.gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+.gallery-images img {
+    width: 30%;
+    border-radius: 8px;
+}
+
+.gallery p {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-family: "Emilys Candy", serif;
+}
+
+.gallery p1 {
+    font-size: 2rem;
+    color: #555;
+    margin-bottom: 1rem;
+}
+
+.gallery h2 {
+    font-size: 2.5rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-family: "Emilys Candy", serif;
+}
+
+.gallery h3 {
+    font-size: 2.5rem;
+    color: #555;
+    margin-bottom: 1rem;
+    font-family: "Ana";
+}
+
+
+/* RSVP Section Styles */
+.rsvp {
+    padding: 20px;
+    border-radius: 8px; /* Rounded corners */
+    max-width: 400px; /* Limit width for better readability */
+    margin: 20px auto; /* Center the form horizontally */
+    text-align: left; /* Align text to the left */
+}
+
+.rsvp h2 {
+    font-size: 2rem; /* Heading font size */
+    margin-bottom: 10px; /* Space below the heading */
+    text-align: center; /* Center the heading */
+}
+
+.rsvp p {
+    font-size: 1.2rem; /* Paragraph font size */
+    margin: 5px 0; /* Space above and below paragraphs */
+    text-align: center; /* Center the paragraphs */
+}
+
+.rsvp input[type="text"] {
+    width: 100%; /* Full width for the input */
+    padding: 10px; /* Padding for input */
+    margin: 10px 0; /* Space above and below input */
+    border-radius: 4px; /* Rounded corners */
+    border: 1px solid #ccc; /* Border color */
+    box-sizing: border-box; /* Include padding in width calculation */
+}
+
+.attendance-options {
+    margin: 10px 0; /* Space around the options */
+}
+
+.rsvp label {
+    font-size: 1rem; /* Label font size */
+    color: #333; /* Label text color */
+    display: block; /* Ensure labels are block elements */
+    margin: 5px 0; /* Space above and below labels */
+}
+
+.rsvp button {
+    margin-top: 10px; /* Space above the button */
+    padding: 10px 15px; /* Padding for button */
+    font-size: 1rem; /* Button font size */
+    color: #fff; /* Button text color */
+    background-color: grey; /* Button background color */
+    border: none; /* No border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    display: block; /* Center button horizontally */
+    width: 100%; /* Full width for button */
+}
+
+.rsvp button:hover {
+    background-color:grey; /* Darker color on hover */
+}
+
+#pairNameField {
+    margin-top: 10px; /* Space above pair name field */
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.9rem;
+    margin-top: 40px;
+}
+
+.image-container {
+    width: auto; /* Задайте ширину контейнера */
+    height: 200px; /* Задайте высоту контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container img {
+    width: auto;
+    height: 100%; /* Масштабирует изображение по высоте контейнера */
+    margin: 50px;
+  }
+  .image-container1 {   
+    width: auto; /* Задайте ширину контейнера */
+    height: 500px; /* Задайте высоту контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container1 img {
+    width: auto;
+    height: auto; /* Масштабирует изображение по высоте контейнера */
+  }
+
+
+  .image-container10 {   
+    width: auto; /* Задайте ширину контейнера */
+    height: 70px; /* Задайте высоту контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container10 img {
+    width: auto;
+    height: auto; /* Масштабирует изображение по высоте контейнера */
+  }
+
+  .image-container2 {
+    width: 500px; /* Задайте ширину контейнера */
+    height: 50px; /* Задайте высоту контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container2 img {
+    width: auto;
+    height: auto; /* Масштабирует изображение по высоте контейнера */
+  }
+
+  /* Countdown Timer Styles */
+/* Countdown Section Background */
+.countdown {
+    position: relative;
+    background: url('images/aisara_hall.jpg') center/cover no-repeat;
+    height: 800px; /* Full viewport height */
+    width: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+
+/* Countdown Overlay */
+
+
+/* Countdown Timer Styling */
+.countdown {
+    text-align: center;
+    margin-top: 0px;
+}
+
+.countdown h2 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+    color: white;
+    font-family: Ana;
+    margin-top: 450px;
+}
+
+#countdown-timer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+    font-family: Ana;
+}
+
+.time-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.time-box span {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease-out, transform 1s ease-out;
+}
+
+.fade-in-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.image-container5 {
+    width: auto; /* Задайте ширину контейнера */
+    height: 150px; /* Задайте высоту контейнера */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .image-container1 img {
+    width: auto;
+    height: auto; /* Масштабирует изображение по высоте контейнера */
+    justify-content: center;
+    align-items: center;
+  }
+  #playButton {
+    font-size: 50px; /* Размер символа */
+    cursor: pointer;
+    background: none; /* Убираем фон */
+    border: none; /* Убираем рамку */
+    outline: none; /* Убираем обводку */
+    color: #4CAF50; /* Цвет символа */
+}
