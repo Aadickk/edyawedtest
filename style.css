@@ -382,10 +382,10 @@ footer {
     align-items: center;
   }
   #playButton {
-    font-size: 50px; /* Размер символа */
+    font-size: 40px; /* Размер символа */
     cursor: pointer;
     background: none; /* Убираем фон */
     border: none; /* Убираем рамку */
     outline: none; /* Убираем обводку */
-    color: #4CAF50; /* Цвет символа */
+    color: white; /* Цвет символа */
 }
